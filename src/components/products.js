@@ -10,6 +10,7 @@ export default function Products() {
             <ul>
               <li>Respiratory & Non-Neurological Therapeutic Face Mask (Herbal)</li>
               <li>Early Influenza Symptoms Detection Face Mask</li>
+              <li>Immunization Face Mask</li>
             </ul>
             </div>
             <div className="prod-img">

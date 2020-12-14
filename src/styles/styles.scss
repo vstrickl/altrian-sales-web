@@ -111,6 +111,10 @@ header {
             line-height: 1.5em;
             font-size: 1.2rem;
         }
+        ul li:before {
+            content: '✓ ';
+          }
+
     }
 }
 
@@ -169,7 +173,7 @@ header {
                 color: $dark;
             }
             ul{
-                list-style: none;
+                list-style-type: square;
             }
         }
         .prod-img{

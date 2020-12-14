@@ -5,11 +5,11 @@ export default function Banner() {
     <div className="banner overlay">
       <div className="container">
         <div className="row">
-          <h2 className="site-banner-title">Innovation in the everyday use all while providing protection</h2>
+          <h2 className="site-banner-title">Innovation in the everyday use of face masks all while providing everyday protection</h2>
             <ul>
-              <li>Delivers Medication</li>
-              <li>Therapeutic</li>
-              <li>Provides Relaxation</li>
+              <li>Therapeutic Delivery</li>
+              <li>Prescription Delivery</li>
+              <li>Relaxation</li>
             </ul>
           </div>
       </div>

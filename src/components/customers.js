@@ -8,7 +8,7 @@ export default function Customers() {
         <Image />
       </div>
       <div className="cust-content">
-        <h1>Who We Serve</h1>
+        <h1>Global Markets</h1>
         <p>We provide Health Care Workers, Educators, Government and Corporate Entities with Disposable and Pharmaceutically Infused Non-Woven Face Masks.</p>
       </div>
     </div>

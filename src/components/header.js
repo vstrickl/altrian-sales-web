@@ -12,7 +12,7 @@ const Header = () => (
           <nav>
             <Link to="/pitch">Why Us</Link>
             <Link to="/products">Products</Link>
-            <Link to="/customers">Who We Serve</Link>
+            <Link to="/customers">Global Markets</Link>
             <Link to="/about">About</Link>
           </nav>
         </div>
