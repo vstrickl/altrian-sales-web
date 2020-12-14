@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Pitch from "../components/pitch"
 import Products from "../components/products"
-import About from "../components/aboutW";
+import About from "../components/about";
 
 const IndexPage = () => (
   <Layout>
