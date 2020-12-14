@@ -4,6 +4,9 @@
   "description": "A life science research and development website",
   "version": "1.0.0",
   "author": "Vonique Stricklen <vstrickl.git@gmail.com>",
+  "engines": {
+    "node": "10.x"
+  }
   "dependencies": {
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.7.0",
