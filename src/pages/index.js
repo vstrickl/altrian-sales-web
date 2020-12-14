@@ -1,21 +1,32 @@
 import React from "react"
-import { Link } from "gatsby"
+import "../styles/styles.scss"
 
-import Layout from "../components/layout"
+import Header from "../components/header"
 import SEO from "../components/seo"
 import Pitch from "../components/pitch"
 import Products from "../components/products"
 import About from "../components/about";
 import Customers from "../components/customers"
+import Banner from "../components/banner"
+import Highlight from "../components/highlight"
+import Footer from "../components/footer"
 
 const IndexPage = () => (
-  <Layout>
+  <div>
+    <Header />
+    <Banner />
     <SEO title="Home" />
-    <Pitch title="Why Us" />
-    <Products title="Products" />
-    <Customers title="Customers" />
-    <About title="About" />
-  </Layout>
+    <Highlight />
+    <div className="content-wrapper">
+      <Pitch title="Why Us" />
+      <div className="inner-wrapper">
+        <Products title="Products" />
+        <Customers title="Customers" />
+      </div>
+      <About title="About" />
+    </div>
+    <Footer />
+  </div>
 )
 
 export default IndexPage
