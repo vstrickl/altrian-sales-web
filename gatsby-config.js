@@ -28,5 +28,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `'Lora`,
+          `serif` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    }
   ],
 }

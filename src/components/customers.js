@@ -9,7 +9,14 @@ export default function Customers() {
       </div>
       <div className="cust-content">
         <h1>Global Markets</h1>
-        <p>We provide Health Care Workers, Educators, Government and Corporate Entities with Disposable and Pharmaceutically Infused Non-Woven Face Masks.</p>
+        <ul>
+          <li>Medical</li>
+          <li>Consumer</li>
+        </ul>
+        <ul>
+          <li>Government</li>
+          <li>Corporation</li>
+        </ul>
       </div>
     </div>
   )
