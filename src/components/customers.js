@@ -3,7 +3,7 @@ import Image from "../components/image"
 
 export default function Customers() {
   return (
-    <div className="customers">
+    <div className="customers" id="customers">
       <div className="cust-img">
         <Image />
       </div>

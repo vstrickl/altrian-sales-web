@@ -3,7 +3,7 @@ import Image from "../components/image2"
 
 export default function Products() {
   return (
-        <div className="products">
+        <div className="products" id="products">
           <div className="content">
           <h1>Products</h1>
             <p>Introducing Therapeutic Infused Face Mask</p>

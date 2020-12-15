@@ -5,7 +5,8 @@ export default function Banner() {
     <div className="banner">
       <div className="container">
         <div className="row">
-          <h2 className="site-banner-title">Innovation in the everyday use of face masks all while providing everyday protection</h2>
+          <h2>Innovation in the everyday use of face masks</h2>
+          <h3>All while providing everyday protection</h3>
             <ul>
               <li>Therapeutic Delivery</li>
               <li>Prescription Delivery</li>
