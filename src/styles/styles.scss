@@ -56,6 +56,7 @@ h1 {
     background-image: url(../images/banner2_crop.png);
     box-shadow: inset 0 -30em 100px -30px rgba(0,0,0,.3);
     @media(max-width: 360px){
+        height: 640px;
         background-image: url(../images/banner2_mobvert.png);
     }
     .row {
