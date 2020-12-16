@@ -28,6 +28,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /assets/ // Where the animated svgs are.
+        }
+      }
+    },
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-google-fonts`,
@@ -38,6 +46,6 @@ module.exports = {
         ],
         display: 'swap'
       }
-    }
+    },
   ],
 }

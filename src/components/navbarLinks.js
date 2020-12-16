@@ -50,8 +50,8 @@ const NavbarLinks = () => {
     <div className="navigation">
     <nav>
       <NavItem to="#pitch">Why Us</NavItem>
-      <NavItem to="#products">Products</NavItem>
       <NavItem to="#customers">Global Markets</NavItem>
+      <NavItem to="#products">Products</NavItem>
       <NavItem to="#about">About</NavItem>
     </nav>
   </div>
