@@ -1,7 +1,6 @@
 import React from "react"
 import "../styles/styles.scss"
 
-import Header from "../components/header"
 import SEO from "../components/seo"
 import Pitch from "../components/pitch"
 import Products from "../components/products"
@@ -10,10 +9,11 @@ import Customers from "../components/customers"
 import Banner from "../components/banner"
 import Highlight from "../components/highlight"
 import Footer from "../components/footer"
+import Navbar from "../components/navbar"
 
 const IndexPage = () => (
-  <div>
-    <Header />
+  <div className="wrapper">
+    <Navbar />
     <Banner />
     <SEO title="Home" />
     <Highlight />
