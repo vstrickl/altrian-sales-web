@@ -13,6 +13,10 @@ const NavItem = styled(Link)`
   margin: 0 1vw;
   transition: all 200ms ease-in;
   position: relative;
+  @media(max-width: 360px){
+    display: block;
+    padding-left: 40px;
+}
 
   :after {
     position: absolute;
