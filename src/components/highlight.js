@@ -6,12 +6,16 @@ export default function Highlight() {
       <div className="highlight" id="customers">
         <div className="cust-content">
           <h1>Global Markets</h1>
+          <div className="wrapper">
           <ul>
             <li>Medical</li>
             <li>Consumer</li>
             <li>Government</li>
-            <li>Corporation</li>
           </ul>
+          <ul className="last">
+            <li>Corporate</li>
+          </ul>
+          </div>
         </div>
       </div>
     </div>
