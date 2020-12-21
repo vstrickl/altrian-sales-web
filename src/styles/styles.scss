@@ -132,6 +132,12 @@ h1 {
     @media(max-width: 991px){
         height: 122px;
     }
+    @media(max-width: 768px){
+        height: 150px;
+    }
+    @media(max-width: 480px){
+        height: 183px;
+    }
     .cust-content {
         justify-content: center;
         display: flex;
@@ -163,6 +169,7 @@ h1 {
             @media(max-width: 480px){
                 text-align: center;
                 margin-bottom: 20px;
+                padding-top: 0;
             }
         }
         .wrapper {
@@ -396,6 +403,7 @@ h1 {
                 width: 40%;
             }
             @media(max-width: 991px){
+                text-align: initial;
                 width: initial;
                 margin-bottom: 60px;
             }
@@ -404,6 +412,7 @@ h1 {
                 margin-bottom: 40px;
             }
             @media(max-width: 480px){
+                text-align: initial;
                 width: 320px;
                 margin-bottom: 40px;
             }

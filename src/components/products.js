@@ -8,7 +8,7 @@ export default function Products() {
         <div className="prod-img">
           <Image />
         </div>
-        <p>Respiratory and Non-Neurological Therapeutic Face Mask (Herbal)</p>
+        <p>Therapeutic Face Mask (Herbal)</p>
       </div>
       <div className="product2">
         <p>Early Influenza Symptoms Detection Face Mask</p>
@@ -20,7 +20,7 @@ export default function Products() {
         <div className="prod-img">
           <Image />
         </div>
-        <p>Immunization Face Mask</p>
+        <p>Immunized Face Mask</p>
       </div>
     </>
   )
