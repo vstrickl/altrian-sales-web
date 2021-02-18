@@ -1,5 +1,7 @@
 import React from "react"
 
+import "./highlight.scss"
+
 export default function Highlight() {
   return (
     <div>

@@ -1,5 +1,5 @@
 {
-  "name": "altrian0-sales",
+  "name": "altrian-sales",
   "private": true,
   "description": "A life science research and development website",
   "version": "1.0.0",
@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
+    "bootstrap": "^4.6.0",
     "gatsby": "^2.26.1",
+    "gatsby-background-image": "^1.4.1",
     "gatsby-image": "^2.7.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.6.1",
@@ -27,6 +29,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
+    "reactstrap": "^8.9.0",
     "smooth-scrollbar": "^8.5.3",
     "styled-components": "^5.2.1"
   },

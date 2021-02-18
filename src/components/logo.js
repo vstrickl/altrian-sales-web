@@ -1,32 +1,44 @@
 
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
-const LogoWrap = styled.div`
-  margin: auto 0;
-  flex: 0 1 36px;
+import Img from "gatsby-image"
 
-  @media (max-width: 768px) and (orientation: landscape) {
-    flex: 0 1 25px;
-  }
+import "./logo.scss"
 
-  a {
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    color: #1d2225;
-    font-size: 2.25rem;
-    text-transform: uppercase;
-}
+const LogoText = styled.p`
+  display: inline-block;
+  margin-bottom: 0;
 `
 
-const Logo = () => {
+export default function Logo () {
+
+  const data = useStaticQuery(
+    graphql`
+      query NavigationQuery {
+        logo: file(relativePath: {eq: "logo.png"}) {
+          childImageSharp {
+            fixed(quality: 90, width: 54) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    `
+  )
+
+  const logo = data.logo.childImageSharp.fluid
+  console.log('hey==>>>', logo);
+
+
   return (
-    <LogoWrap>
-      <Link to="/">Altrian</Link>
-    </LogoWrap>
+    <div class="logo-wrap">
+      <Img 
+        fixed={data.logo.childImageSharp.fixed}
+        className="logo"
+      />
+      <LogoText>&nbsp; Altrian</LogoText>
+    </div>
   )
 }
-
-export default Logo

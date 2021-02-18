@@ -1,0 +1,104 @@
+// Highlight
+
+.highlight {
+    background-color: #f7a42e;
+    text-align: center;
+    color: #fff;
+    @media(max-width: 1280px){
+        height: 74px;
+    }
+    @media(max-width: 991px){
+        height: 122px;
+    }
+    @media(max-width: 768px){
+        height: 150px;
+    }
+    @media(max-width: 480px){
+        height: 183px;
+    }
+    .cust-content {
+        justify-content: center;
+        display: flex;
+        @media(max-width: 991px){
+            display: block;
+        }
+        @media(max-width: 768px){
+            display: block;
+            padding: 20px;
+        }
+        @media(max-width: 480px){
+            width: initial;
+            padding: 25px 20px;
+        }
+        h1 {
+            text-align: left;
+            color: #fff;
+            margin: 20px 80px 20px 0;
+            @media(max-width: 991px){
+                text-align: center;
+                margin-top: 0;
+                padding-top: 20px;
+                margin-right: 0;
+            }
+            @media(max-width: 768px){
+                font-size: 1.4rem;
+                margin: 0 0 20px 0;
+            }
+            @media(max-width: 480px){
+                text-align: center;
+                margin-bottom: 20px;
+                padding-top: 0;
+            }
+        }
+        .wrapper {
+            width: 50%;
+            min-width: initial;
+            display: flex;
+            @media(max-width: 991px){
+                width: initial;
+                justify-content: center;
+            }
+            @media(max-width: 768px){
+                width: initial;
+                justify-content: center;
+            }
+            @media(max-width: 480px){
+                display: block;
+                width: initial;
+            }
+            ul {
+                display: flex;
+                height: -webkit-fill-available;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-weight: 300;
+                margin: 25px 0;
+                list-style: none;
+                padding-left: 0;
+                @media(max-width: 991px){
+                    text-align: center;
+                    margin-bottom: 0;
+                    padding-bottom: 20px;
+                    margin-top: 0;
+                }
+                @media(max-width: 768px){
+                    margin: 0px;
+                }
+                @media(max-width: 480px){
+                    display: flex;
+                    justify-content: center;
+                }
+
+                li {
+                    margin: 0 20px;
+                    letter-spacing: 1.75px;
+                    text-transform: uppercase;
+                    font-size: 0.75rem;
+                    @media(max-width: 480px){
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}

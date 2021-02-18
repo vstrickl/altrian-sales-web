@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Altrian Mask Offerings`,
-    description: `A life science research and development website`,
-    author: `@vstrickl`,
+    title: `Altrian`,
+    subTitle: ` - BioChem Lab`,
+    author: `Von`,
+    authorSite: `www.vonstrick.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

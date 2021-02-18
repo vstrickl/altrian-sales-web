@@ -1,0 +1,22 @@
+// About
+.about {
+    justify-content: space-between;
+    align-items: center;
+    .content {
+        width: 33%;
+        text-align: justify;
+        .about-title {
+            text-align: center;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 300;
+            margin: 20px 0 0 0;
+            letter-spacing: 1.75px;
+        }
+        ul {
+            list-style-type: square;
+        }
+    }
+}
