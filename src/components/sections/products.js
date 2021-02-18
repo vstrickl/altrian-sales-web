@@ -1,5 +1,4 @@
 import React from "react"
-import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 
 import { Row, Col } from 'reactstrap'
@@ -20,7 +19,6 @@ export default function Products() {
   )
 
   const productone = data.productone.publicURL
-  console.log('hey==>>>', productone);
 
   return (
     <>

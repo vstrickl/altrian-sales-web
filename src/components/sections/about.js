@@ -24,7 +24,6 @@ export default function About() {
   )
 
   const about = data.about.childImageSharp.fluid
-  console.log('hey==>>>', about);
 
   return (
     <Row className="p-5 about">
@@ -35,7 +34,7 @@ export default function About() {
         <p>Altrian-BioChem Lab operates under several fictitious names:<ul><li>Altrian</li><li>Altrian BioChem</li></ul></p>
       </Col>
       <Col xs="6">
-        <Img fluid={data.about.childImageSharp.fluid} />
+        <Img fluid={about} />
       </Col>
     </Row>
   )

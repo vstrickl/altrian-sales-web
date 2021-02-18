@@ -18,7 +18,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 export default function IndexPage ({ data }) {
 
   const bannerImg = data.banner.childImageSharp.fluid
-  console.log('hey==>>>', bannerImg);
 
   return (
     <Layout>
