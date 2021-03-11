@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
+import { useStaticQuery, graphql } from "gatsby"
+
 const PitchWrap = styled.div`
   text-align: center;
   padding-top: 60px;
@@ -28,11 +30,26 @@ const PitchText = styled.div`
 `
 
 export default function Pitch() {
+
+  const data = useStaticQuery(
+    graphql`
+      query PitchQuery {
+        pitch: strapiPitch(strapiId: {eq: 1}) {
+          pitch_text
+        }
+      }
+    `
+  )
+
+  const pitch = data.pitch
+
   return (
-    <PitchWrap>
-      <PitchText>
-        <h1>Revealing the many uses of infused face masks</h1>
-      </PitchText>
-    </PitchWrap>
+    <div id="products">
+      <PitchWrap>
+        <PitchText>
+          <h1>{pitch.pitch_text}</h1>
+        </PitchText>
+      </PitchWrap>
+    </div>
   )
 }

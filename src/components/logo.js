@@ -29,13 +29,11 @@ export default function Logo () {
   )
 
   const logo = data.logo.childImageSharp.fluid
-  console.log('hey==>>>', logo);
-
 
   return (
     <div class="logo-wrap">
       <Img 
-        fixed={data.logo.childImageSharp.fixed}
+        fixed={logo}
         className="logo"
       />
       <LogoText>&nbsp; Altrian</LogoText>

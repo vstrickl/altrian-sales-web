@@ -10,19 +10,24 @@ export default function Products() {
 
   const data = useStaticQuery(
     graphql`
-      query ProductsQuery {
-        productone: file(relativePath: {eq: "flower_shadow.svg"}) {
-          publicURL
+      query HighlightQuery {
+        product: strapiProductHighlight(strapiId: {eq: 2}) {
+          products {
+            product_name
+            product_img {
+              url
+            }
+          }
         }
       }
     `
   )
 
-  const productone = data.productone.publicURL
+  const product = data.product
 
   return (
     <>
-      <Row className={`product1`}>
+      <Row className={`product`}>
         <Col 
           className={`prod-img`}
           md={{ 
@@ -30,8 +35,22 @@ export default function Products() {
             order: 2, 
             offset: 1
           }}>
-            <img src={productone} style={{width: "10%"}} />
-            <p class="product-name">Therapeutic Face Mask (Herbal)</p>
+            <ul>
+              {product.products.map(document => (
+                <li key={document.id}>
+                  {document.product_img.map(document => (
+                    <div key={document.id}>
+                    <img
+                        src={document.url}
+                        style={{width: "10%"}}
+                        alt=""
+                    />
+                    </div>
+                  ))}
+                  <p class="product-name">{document.product_name}</p>
+                </li>
+              ))}
+            </ul>
           </Col>
       </Row>
     </>

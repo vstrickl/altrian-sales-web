@@ -17,25 +17,21 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 export default function IndexPage ({ data }) {
 
-  const bannerImg = data.banner.childImageSharp.fluid
+  const banner = data.banner
 
   return (
     <Layout>
       <BannerImg
         Tag="section"
         className={`banner`}
-        fluid={bannerImg}
+        fluid={banner.banner_img.childImageSharp.fluid}
         alt=""
       >
       <Container fluid={true}>
         <Row className="banner-text">
-          <h2>Innovation in the everyday use of face masks</h2>
-          <h3>All while providing everyday protection</h3>
-          <ul>
-            <li>Therapeutic Delivery</li>
-            <li>Prescription Delivery</li>
-            <li>Relaxation</li>
-          </ul>
+          <h2>{banner.lead}</h2>
+          <h3>{banner.sublead}</h3>
+          <div dangerouslySetInnerHTML={{ __html: banner.lead_details }} />
           </Row>
       </Container>
       </BannerImg>
@@ -53,10 +49,15 @@ export default function IndexPage ({ data }) {
 
 export const query = graphql`
   query IndexQuery {
-    banner: file(relativePath: {eq: "banner2_crop.png"}) {
-      childImageSharp {
-        fluid(quality: 90, maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+    banner: strapiBanner(strapiId: {eq: 1}) {
+      lead
+      sublead
+      lead_details
+      banner_img {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }

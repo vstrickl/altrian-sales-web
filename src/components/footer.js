@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
+import { Link } from "gatsby"
+
 const FooterWrap = styled.div`
   margin-top: 2rem;
   background-color: #1d2225;
@@ -23,6 +25,7 @@ export default function Footer() {
       <p>
         <a href="/">Altrian</a> © {new Date().getFullYear()} All Rights Reserved
       </p>
+      <Link>Careers</Link>
     </FooterWrap>
   )
 }

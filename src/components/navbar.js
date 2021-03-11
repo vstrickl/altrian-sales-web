@@ -10,7 +10,11 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink
+  NavLink,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
 } from 'reactstrap'
 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -25,7 +29,12 @@ const Menu = styled.div`
 export default function Navigation () {
   
   const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpenService, setDropdownOpenService] = useState(false);
+  const [dropdownOpenAbout, setDropdownOpenAbout] = useState(false);
+
   const toggle = () => setIsOpen(!isOpen);
+  const toggleService = () => setDropdownOpenService(!dropdownOpenService);
+  const toggleAbout = () => setDropdownOpenAbout(!dropdownOpenAbout);
 
   return (
     <Menu>
@@ -48,7 +57,7 @@ export default function Navigation () {
             navbar
           >
             <NavItem>
-              <NavLink href="#pitch">Why Us</NavLink>
+              <NavLink href="/" active>Home</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#customers">Global Markets</NavLink>
@@ -56,8 +65,32 @@ export default function Navigation () {
             <NavItem>
               <NavLink href="#products">Products</NavLink>
             </NavItem>
+            <Dropdown nav isOpen={dropdownOpenService} onClick={toggleService}>
+              <DropdownToggle nav caret>
+                Services
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem href="/">Our Services</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem href="/">Pre-Clinical</DropdownItem>
+                <DropdownItem href="/">3 Phase Support</DropdownItem>
+                <DropdownItem href="/">Commercialization Strategy Support</DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
+            <Dropdown nav isOpen={dropdownOpenAbout} onClick={toggleAbout}>
+              <DropdownToggle nav caret>
+                About
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem href="#about">About Us</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem href="/">Our Capabilities</DropdownItem>
+                <DropdownItem href="/">Our Commitment</DropdownItem>
+                <DropdownItem href="/">The Team</DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
             <NavItem>
-              <NavLink href="#about">About</NavLink>
+              <NavLink href="/">Contact Us</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
